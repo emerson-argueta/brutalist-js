@@ -1,0 +1,13 @@
+{
+  "name": "brutalist-js",
+  "version": "0.1.0",
+  "description": "Vanilla JS component helpers and CSS for the Brutalist UI design system",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./css": "./css/brutalist.css"
+  },
+  "keywords": ["brutalist", "ui", "vanilla-js", "components"],
+  "license": "MIT"
+}
