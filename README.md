@@ -8,12 +8,24 @@ No build step. No dependencies. Works with importmaps.
 
 ## Installation
 
+### CDN (recommended — no bundler, no npm)
+```html
+<link rel="stylesheet" href="https://brutalist-js.pages.dev/css/brutalist.css">
+<script type="importmap">
+{
+  "imports": {
+    "brutalist-js": "https://brutalist-js.pages.dev/index.js"
+  }
+}
+</script>
+```
+
 ### npm
 ```bash
 npm install brutalist-js
 ```
 
-### importmap (no bundler)
+### Self-hosted
 ```json
 {
   "imports": {
