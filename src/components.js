@@ -2,9 +2,9 @@ import { escape } from "./html.js"
 
 export function pageHeader(title, actionsHtml = "") {
   return `
-    <div class="flex items-center justify-between mb-6">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
       <h1 class="text-2xl font-black tracking-tight">${title}</h1>
-      <div class="flex items-center gap-2">${actionsHtml}</div>
+      ${actionsHtml ? `<div class="flex flex-wrap items-center gap-2">${actionsHtml}</div>` : ""}
     </div>`
 }
 
